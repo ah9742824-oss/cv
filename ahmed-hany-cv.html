@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ahmed Hany Sayedahmed Abdel Wahab — CV</title>
+    <meta name="description" content="CV of Ahmed Hany Sayedahmed Abdel Wahab — Electrical Power Engineering student and Full-Stack Developer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        /* One line to restyle: change --accent to any colour you prefer. */
+        --accent: #0e8f84;
+        --ink: #14181d;
+        --body: #3d4550;
+        --muted: #6b7583;
+        --rule: #d8dee6;
+        --page: #eef0f3;
+        --paper: #ffffff;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--body);
+        font-family: 'IBM Plex Sans', system-ui, -apple-system, Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .toolbar {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 18px 16px 10px;
+        overflow: hidden;
+      }
+
+      .toolbar .back {
+        float: left;
+        color: var(--muted);
+        font-size: 12.5px;
+        line-height: 32px;
+      }
+
+      .toolbar .back:hover { color: var(--ink); }
+
+      .print-btn {
+        float: right;
+        border: 0;
+        background: var(--accent);
+        color: #fff;
+        font: inherit;
+        font-size: 12.5px;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .print-btn:hover { filter: brightness(1.08); }
+
+      .paper {
+        max-width: 880px;
+        margin: 0 auto 48px;
+        background: var(--paper);
+        border-radius: 10px;
+        padding: 40px 44px 46px;
+        box-shadow: 0 10px 30px -22px rgba(20, 24, 29, 0.55);
+      }
+
+      /* ---------- header ---------- */
+      .head { overflow: hidden; }
+
+      .head__id { float: left; max-width: 52%; }
+
+      .head__id h1 {
+        margin: 0;
+        font-size: 27px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        line-height: 1.15;
+      }
+
+      .head__id p {
+        margin: 6px 0 0;
+        color: var(--accent);
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .head__contact {
+        float: right;
+        text-align: right;
+        font-size: 12px;
+        color: var(--body);
+        line-height: 1.75;
+      }
+
+      .head__contact span { display: block; }
+
+      .head__contact a:hover { color: var(--accent); }
+
+      .rule {
+        clear: both;
+        height: 2px;
+        background: var(--ink);
+        margin: 18px 0 22px;
+      }
+
+      /* ---------- columns ---------- */
+      .cols { width: 100%; }
+      .cols:after { content: ''; display: block; clear: both; }
+
+      .col-main { float: left; width: 61%; }
+      .col-side { float: right; width: 34%; }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 11.5px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink);
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 6px;
+      }
+
+      .block { margin-bottom: 22px; }
+      .block:last-child { margin-bottom: 0; }
+
+      .summary { margin: 0; text-align: justify; }
+
+      /* entries */
+      .entry { margin-bottom: 14px; page-break-inside: avoid; }
+      .entry:last-child { margin-bottom: 0; }
+
+      .entry__head { overflow: hidden; }
+
+      .entry__title {
+        float: left;
+        margin: 0;
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink);
+      }
+
+      .entry__when {
+        float: right;
+        font-size: 11.5px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .entry__sub {
+        clear: both;
+        margin: 1px 0 5px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      ul.points { margin: 0; padding: 0 0 0 16px; list-style: none; }
+
+      ul.points li {
+        position: relative;
+        margin-bottom: 4px;
+        text-align: justify;
+      }
+
+      ul.points li:before {
+        content: '';
+        position: absolute;
+        left: -12px;
+        top: 7px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--muted);
+      }
+
+      /* sidebar */
+      .side-item { margin-bottom: 13px; page-break-inside: avoid; }
+      .side-item:last-child { margin-bottom: 0; }
+
+      .side-item strong {
+        display: block;
+        color: var(--ink);
+        font-weight: 600;
+        font-size: 12.5px;
+      }
+
+      .side-item span { display: block; color: var(--muted); font-size: 12px; }
+
+      .skill-group { margin-bottom: 12px; }
+      .skill-group:last-child { margin-bottom: 0; }
+
+      .skill-group strong {
+        display: block;
+        color: var(--ink);
+        font-weight: 600;
+        font-size: 12.5px;
+        margin-bottom: 2px;
+      }
+
+      .skill-group p { margin: 0; font-size: 12px; color: var(--body); }
+
+      .strip {
+        clear: both;
+        margin-top: 22px;
+        overflow: hidden;
+      }
+
+      .strip p { margin: 0 0 2px; font-size: 12px; }
+
+      .strip p strong { color: var(--ink); font-weight: 600; }
+
+      .foot-note {
+        clear: both;
+        margin: 26px 0 0;
+        padding-top: 12px;
+        border-top: 1px solid var(--rule);
+        font-size: 11px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      /* ---------- responsive ---------- */
+      @media (max-width: 720px) {
+        .paper { padding: 26px 20px 30px; border-radius: 0; margin-bottom: 0; }
+        .head__id, .head__contact { float: none; max-width: 100%; text-align: left; }
+        .head__contact { margin-top: 12px; }
+        .col-main, .col-side { float: none; width: 100%; }
+        .col-side { margin-top: 24px; }
+        .entry__title, .entry__when { float: none; display: block; }
+      }
+
+      /* ---------- print / PDF ---------- */
+      @page { size: A4; margin: 12mm 13mm; }
+
+      @media print {
+        body { background: #fff; font-size: 11px; line-height: 1.42; }
+        h2 { font-size: 9.5px; }
+        .head__id h1 { font-size: 22px; }
+        .head__id p { font-size: 12px; }
+        .head__contact { font-size: 10px; line-height: 1.6; }
+        .entry__title { font-size: 11.5px; }
+        .entry__sub, .entry__when { font-size: 10px; }
+        .side-item strong, .skill-group strong { font-size: 10.5px; }
+        .side-item span, .skill-group p, .strip p { font-size: 10px; }
+        .block { margin-bottom: 12px; }
+        .entry { margin-bottom: 8px; }
+        .strip { margin-top: 12px; }
+        ul.points li { margin-bottom: 2px; }
+        .side-item { margin-bottom: 7px; }
+        .skill-group { margin-bottom: 6px; }
+        .rule { margin: 11px 0 13px; }
+        h2 { margin-bottom: 8px; padding-bottom: 4px; }
+        .foot-note { display: none; }
+        .toolbar { display: none; }
+        .paper {
+          max-width: none;
+          margin: 0;
+          padding: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+        a { color: inherit; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <a class="back" href="#" id="back-link">&larr; Back to portfolio</a>
+      <button class="print-btn" type="button" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <main class="paper">
+      <header class="head">
+        <div class="head__id">
+          <h1>Ahmed Hany Sayedahmed Abdel Wahab</h1>
+          <p>Electrical Power Engineering Student &middot; Full-Stack Developer</p>
+        </div>
+        <div class="head__contact">
+          <span>Egypt</span>
+          <span>01158208269</span>
+          <span><a href="https://www.linkedin.com/in/ahmed-hany-sayedahmed-abdel-wahab-b45748435">linkedin.com/in/ahmed-hany-sayedahmed-abdel-wahab</a></span>
+          <span><a href="https://github.com/ah9742824-oss">github.com/ah9742824-oss</a></span>
+        </div>
+      </header>
+
+      <div class="rule"></div>
+
+      <div class="cols">
+        <div class="col-main">
+          <section class="block">
+            <h2>Professional Summary</h2>
+            <p class="summary">
+              Electrical Power Engineering student at the Higher Institute of Engineering, El Shorouk
+              Academy, who builds software alongside his engineering studies. Works across full-stack
+              web development, IoT and embedded systems, and classic electrical control &mdash; learning
+              by building, from a PostgreSQL-backed web application to an ESP32 lighting system with a
+              mobile control app.
+            </p>
+          </section>
+
+          <section class="block">
+            <h2>Selected Projects</h2>
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">LUNA Café</h3>
+              </div>
+              <p class="entry__sub">Full-Stack Web Application &mdash; React, Vite, Express, PostgreSQL</p>
+              <ul class="points">
+                <li>Built a complete café application: customer-facing menu and an admin system sharing one REST API.</li>
+                <li>Implemented the interface, API, database schema, authentication, content management and statistics. Deployed and publicly available.</li>
+              </ul>
+            </article>
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">SmartLight</h3>
+              </div>
+              <p class="entry__sub">Embedded Systems &mdash; ESP32, C++, Flutter</p>
+              <ul class="points">
+                <li>Built an ESP32 lighting system with C++ firmware driving eight relay channels.</li>
+                <li>Developed a Flutter app controlling the relays remotely, connecting the hardware layer to a software interface.</li>
+              </ul>
+            </article>
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">Cine Box</h3>
+              </div>
+              <p class="entry__sub">Frontend web project, source maintained publicly on GitHub.</p>
+            </article>
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">My Tasks</h3>
+              </div>
+              <p class="entry__sub">Practical task-management and productivity web project, source public on GitHub.</p>
+            </article>
+          </section>
+
+          <section class="block">
+            <h2>Practical Training</h2>
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">Classic Control &amp; Electrical Installations</h3>
+                <span class="entry__when">Jul 2026</span>
+              </div>
+              <p class="entry__sub">
+                Platinum Academy Egypt &mdash; Platinum Group for Automation Solutions, Schneider
+                Electric Authorized Education Center &middot; 3 weeks, 28 hours
+              </p>
+              <ul class="points">
+                <li>Practical and theoretical curriculum covering traffic light control, motor operation, forward and reverse control, power circuits and control circuits.</li>
+              </ul>
+            </article>
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">Summer Training &mdash; Electrical Works</h3>
+                <span class="entry__when">Aug 2026</span>
+              </div>
+              <p class="entry__sub">El Nasr General Contracting Company (Hassan Mohamed Allam) &middot; 2&ndash;21 August 2026</p>
+              <ul class="points">
+                <li>Summer training in the electrical department, completed with a 95% efficiency rating.</li>
+              </ul>
+            </article>
+          </section>
+        </div>
+
+        <aside class="col-side">
+          <section class="block">
+            <h2>Education</h2>
+            <div class="side-item">
+              <strong>B.Sc. Electrical Power &amp; Machines Engineering</strong>
+              <span>Higher Institute of Engineering, El Shorouk Academy</span>
+              <span>2025 &ndash; Present</span>
+            </div>
+          </section>
+
+          <section class="block">
+            <h2>Certificates</h2>
+            <div class="side-item">
+              <strong>Classic Control &amp; Electrical Installations</strong>
+              <span>Platinum Academy Egypt &middot; Jul 2026</span>
+            </div>
+            <div class="side-item">
+              <strong>Summer Training Certificate</strong>
+              <span>El Nasr General Contracting &middot; Aug 2026</span>
+            </div>
+            <div class="side-item">
+              <strong>Arduino Programming Fundamentals</strong>
+              <span>Edraak &middot; 4 hours</span>
+            </div>
+            <div class="side-item">
+              <strong>Basics in Revit Design</strong>
+              <span>Edraak &middot; 3 hours</span>
+            </div>
+          </section>
+
+          <section class="block">
+            <h2>Software Skills</h2>
+            <div class="skill-group">
+              <strong>Frontend</strong>
+              <p>HTML, CSS, JavaScript, React, Vite.</p>
+            </div>
+            <div class="skill-group">
+              <strong>Backend &amp; Data</strong>
+              <p>Node.js, Express, REST APIs, SQL, PostgreSQL.</p>
+            </div>
+            <div class="skill-group">
+              <strong>Mobile &amp; Embedded</strong>
+              <p>Flutter, C++, ESP32, Arduino.</p>
+            </div>
+            <div class="skill-group">
+              <strong>Languages &amp; Tools</strong>
+              <p>Python, Git, GitHub, Revit (basics).</p>
+            </div>
+          </section>
+
+        </aside>
+      </div>
+
+      <section class="strip">
+        <h2>Focus &amp; Interests</h2>
+        <p><strong>Engineering:</strong> electrical power, control systems, automation, electrical installations, embedded systems, IoT.</p>
+        <p><strong>Software &amp; interests:</strong> artificial intelligence, full-stack development, smart connected devices, engineering software.</p>
+        <p><strong>Languages:</strong> Arabic (native), English (course certificate).</p>
+      </section>
+
+      <p class="foot-note">Ahmed Hany &times; Engineering + Software</p>
+    </main>
+
+    <script>
+      /* Point this at the portfolio once it has a live URL. */
+      var PORTFOLIO_URL = '';
+      (function () {
+        var link = document.getElementById('back-link');
+        if (PORTFOLIO_URL) link.href = PORTFOLIO_URL;
+        else link.style.display = 'none';
+      })();
+    </script>
+  </body>
+</html>
